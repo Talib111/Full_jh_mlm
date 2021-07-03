@@ -1,0 +1,16 @@
+.num_indicator div{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border: 2px solid rebeccapurple;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    box-shadow: -2px 3px 6px grey;
+    margin: auto;
+    
+
+}

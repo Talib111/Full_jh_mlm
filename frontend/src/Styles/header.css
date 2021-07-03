@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
+}
+.header .f1{
+    width: 20%;
+    background-color: #34BA9B;
+}
+.header .f2{
+    width: 60%;
+}

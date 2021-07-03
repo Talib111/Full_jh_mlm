@@ -1,0 +1,15 @@
+.support_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+@media(min-width: 0px) and (max-width: 600px){
+
+.support_spacer{
+   margin-top: 10px;
+}
+}

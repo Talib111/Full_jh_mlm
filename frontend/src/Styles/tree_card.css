@@ -1,0 +1,16 @@
+.tree_card{
+    background-color: #A861FF;
+    width: 275px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    color: white;
+   box-shadow: -5px 5px 6px grey;
+   border-radius: 5px;
+   
+}
+.tree_card span{
+    color: black;
+}

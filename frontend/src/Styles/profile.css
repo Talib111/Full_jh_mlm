@@ -1,0 +1,16 @@
+.profile_tabs div{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px 0px 10px 0;
+    
+}
+.profile_tabs div:hover{
+    background-color: indigo;
+    color: white;
+}
+.profile_tabs{
+    padding-left: 12px;
+    padding-right: 12px;
+
+}

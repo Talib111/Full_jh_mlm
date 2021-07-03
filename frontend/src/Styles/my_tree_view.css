@@ -1,0 +1,55 @@
+.data_cylinder{
+    width: 80%;
+    background-color: rebeccapurple;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+
+}
+.data_cylinder h4{
+    background-color: white;
+    margin-top: 8px;
+    padding: 0px 30px 0px 30px;
+    color: black;
+    border-radius: 20px;
+}
+.user_tree_block{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.connection_line{
+    height: 50px;
+    width: 2px;
+    background-color: black;
+    display: block;
+    margin: auto;
+
+
+}
+.tree_block_container{
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin: auto;
+    /* background-color: orange; */
+}
+.right_line{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+.left_line{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    float: right;
+}

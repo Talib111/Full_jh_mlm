@@ -1,0 +1,10 @@
+.bar_chart{
+    width: 500px;
+    /* height: 276; */
+}
+.Doughnut_chart{
+    width: 300px;
+    display: block;
+    margin: auto;
+    /* height: 276; */
+}

@@ -1,0 +1,78 @@
+Date : 2021-06-23 12:52:23
+Directory : f:\1 REACT JS\Jh_MLM\jh_mlm\src\components
+Total : 52 files,  2345 codes, 56 comments, 373 blanks, all 2774 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         51 |      2,145 |         56 |        373 |      2,574 |
+| JSON       |          1 |        200 |          0 |          0 |        200 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                    | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                       |         52 |      2,345 |         56 |        373 |      2,774 |
+| dashboard                                                               |          2 |         19 |          0 |          8 |         27 |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Activate_client.js           | JavaScript |         22 |          0 |          4 |         26 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Activate_client_form.js      | JavaScript |         81 |          2 |         21 |        104 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Add_client.js                | JavaScript |         39 |          0 |          9 |         48 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Add_money.js                 | JavaScript |         17 |          0 |          5 |         22 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Address_form.js              | JavaScript |        127 |          2 |         21 |        150 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\All_team_table.js            | JavaScript |         82 |          8 |          9 |         99 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Bank_account_details_form.js | JavaScript |         80 |          2 |         18 |        100 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Bar_chart.js                 | JavaScript |         19 |          0 |          6 |         25 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Change_avatar_form.js        | JavaScript |         55 |          2 |         19 |         76 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Change_password_form.js      | JavaScript |         81 |          2 |         21 |        104 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Checkbox.js                  | JavaScript |         15 |          0 |          4 |         19 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Columns.js                   | JavaScript |         29 |          0 |          0 |         29 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Credit_card.js               | JavaScript |         56 |          0 |          6 |         62 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Dashboard.js                 | JavaScript |         76 |          0 |         11 |         87 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Data_Cylinder.js             | JavaScript |         10 |          0 |          4 |         14 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Direct_team.js               | JavaScript |         17 |          0 |          3 |         20 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Doughnut_chart.js            | JavaScript |         18 |          0 |          6 |         24 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Drop_down.js                 | JavaScript |         15 |          0 |          4 |         19 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Left_team.js                 | JavaScript |         17 |          0 |          3 |         20 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Line_chart.js                | JavaScript |         39 |          0 |          4 |         43 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Login_page.js                | JavaScript |         67 |         18 |         11 |         96 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Logout.js                    | JavaScript |          9 |          0 |          3 |         12 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\MOCK_DATA.json               | JSON       |        200 |          0 |          0 |        200 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\My_team.js                   | JavaScript |         17 |          0 |          3 |         20 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\My_tree_view.js              | JavaScript |         25 |         11 |          4 |         40 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Order_history.js             | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Payout_cashback.js           | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Payout_closing.js            | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Payout_direct.js             | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Payout_leadership.js         | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Payout_matching.js           | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Payout_roi.js                | JavaScript |         18 |          0 |          3 |         21 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Personal_info_form.js        | JavaScript |        268 |          2 |         27 |        297 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Profile.js                   | JavaScript |         21 |          0 |          3 |         24 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Profile_form.js              | JavaScript |        222 |          2 |         30 |        254 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Reports_admin_charge.js      | JavaScript |         17 |          0 |          5 |         22 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Reports_tds_charge.js        | JavaScript |         17 |          0 |          5 |         22 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Right_team.js                | JavaScript |         17 |          0 |          3 |         20 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Sidebar.js                   | JavaScript |         85 |          0 |         18 |        103 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Support.js                   | JavaScript |         32 |          0 |          3 |         35 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Table_buttons.js             | JavaScript |         15 |          0 |          4 |         19 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Team.js                      | JavaScript |         16 |          0 |          3 |         19 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Tree_card.js                 | JavaScript |         22 |          0 |          3 |         25 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Tree_outside.js              | JavaScript |         52 |          3 |          2 |         57 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Update_bank_details.js       | JavaScript |         26 |          0 |          6 |         32 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Update_kyc.js                | JavaScript |         10 |          0 |          3 |         13 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Upload_kyc_form.js           | JavaScript |         95 |          2 |         20 |        117 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\User_card.js                 | JavaScript |         22 |          0 |          3 |         25 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Wallet.js                    | JavaScript |         39 |          0 |          4 |         43 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\Widraw_request.js            | JavaScript |         11 |          0 |          3 |         14 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\dashboard\DataCard.js        | JavaScript |         10 |          0 |          5 |         15 |
+| f:\1 REACT JS\Jh_MLM\jh_mlm\src\components\dashboard\QuickLinks.js      | JavaScript |          9 |          0 |          3 |         12 |
+| Total                                                                   |            |      2,345 |         56 |        373 |      2,774 |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+

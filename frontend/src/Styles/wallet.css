@@ -1,0 +1,15 @@
+.wallet_tabs div{
+    cursor: pointer;
+}
+.wallet_tabs div:hover{
+    background-color: grey;
+}
+.custom_style{
+    padding: 10px 50px 10px 50px !important;
+}
+
+@media(min-width: 0px) and (max-width: 600px){
+    .custom_style{
+        padding: 10px 5px 10px 5px !important;
+    }
+}

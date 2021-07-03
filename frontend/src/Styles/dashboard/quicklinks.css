@@ -1,0 +1,17 @@
+.quick_links{
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -2px 2px 4px grey;
+}
+.quick_links:hover{
+    box-shadow: -3px 4px 12px grey;
+    background-color: green;
+    color: white;
+}

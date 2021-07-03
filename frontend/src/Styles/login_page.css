@@ -1,0 +1,32 @@
+.form_container{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+   margin: auto;
+}
+.form_container_inner{
+    width: 100%;
+ 
+    display: block;
+    margin: auto;
+    
+  
+}
+.form_container_inner input{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    
+}
+.form_container_inner button{
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    padding: 2px 30px 2px 30px;
+
+}
+.form_error{
+    color: red;
+}
