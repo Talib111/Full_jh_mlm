@@ -11,10 +11,10 @@ const OrderSchema = new mongoose.Schema({
   order_ref_no: {
     type: String,
   },
-  status: {
-    type: String,
+  product_Name:{
+    type: String
   },
-  package_Qty: {
+  product_Qty: {
     type: String,
   },
   grand_Total: {

@@ -25,7 +25,9 @@ app.use(cors())
 // app.use(body_p.json());
 app.use(exp.json());
 
-
+////////===============================================================//////////////
+////////====================1 new member id generating===================//////////////
+////////===============================================================//////////////
 app.post('/push-all-data', (req,res)=>{
 
     //==1== first set check sponser has 2 1 or 0 then decide the side
@@ -36,12 +38,12 @@ app.post('/push-all-data', (req,res)=>{
             if(result.Team.direct_Team.length==0){
                 var sponser_Side = "left";
                 // res.send("left");
-                create_Username(sponser_Side);
+                make_Username(sponser_Side);
             }
             if(result.Team.direct_Team.length==1){
                 var sponser_Side = "right";
                 // res.send("right");
-                create_Username(sponser_Side);
+                make_Username(sponser_Side);
 
             }
             else{
@@ -60,8 +62,8 @@ app.post('/push-all-data', (req,res)=>{
         res.send(e);
     })
 
-    //==2== creating username and side
-    const create_Username = (sponser_Side)=>{
+    //==2== make username and side
+    const make_Username = (sponser_Side)=>{
         var sponser_Side2 = sponser_Side;
     var username2 = req.body.First_name.concat(req.body.Last_name.concat("@jhf"));
     //check if this username exist or not then make new if
@@ -82,7 +84,7 @@ app.post('/push-all-data', (req,res)=>{
         all_data.save().then(()=>{
         // res.send("data is saved successfully")
         console.log('data is saved successfully')
-        res.send(" user has been saved successfully");
+        // res.send(" user has been saved successfully");
 
         //add new member to all leaders sponsers as well as fill the direct team of current sponser
         // add_to_leader();
@@ -97,41 +99,141 @@ app.post('/push-all-data', (req,res)=>{
    const update_sponser_data=(username4)=>{
     var i = req.body.sponser_Username;
     //update the details of current sponser
-    
-        // var newval = {$set: {Team.4.direct_Team:[]}};//set the pushed array here
+    while(i!="null"){
+        
+        // var newval = {$set: {Team.direct_Team:[]}};//set the pushed array here
         All_data.findByIdAndUpdate({_id:i},newval,{new:true,useFindAndModify: false}).then(()=>{
-            res.send("success")
+            // res.send("sponser data has been updated")
         }).catch((e)=>{
             res.send(e);
         })
+
+        //find the uplevel sponser name until null
+        All_data.findOne({_id:i},function(err, result){
+            
+            if(result){
+                i = result;
     
-        
+            }
+            else{
+                res.send("sponser does not exits");
+            }
+        }).then(()=>{
+            // res.send("value updated")
+            // console.log("inside then")
+        }).catch((e)=>{
+            res.send(e);
+        });
+
+    }
+    
+        //after exit the loop on null count
+            res.send("sponser data has been updated")
   
 
    }
 
 
-// //code to add new mebers to leaders
-// function add_to_leader(){
-//     i = sponser_username.personal_Data.sponser_Username;
-//     j = sponser_username.personal_Data.sponser_Side;
-//     if(j=="left"){
-//         a = "left_Team"
-//     }
-//     else{
-//         a = "right_Team"
-//     }
-//     while(sponser_Username!=null){
-//             //all working
-//             //1 push member to my_team and left/right team
-
-//             {.my_team: add_item(new member username),a: add_item(new member username)}//object key as varaible
-
-//             i = i.personal_Data.sponser_Username;
-//     }
-// }
    
 });
+
+////////===============================================================//////////////
+////////====================/new member id generating===================//////////////
+////////===============================================================//////////////
+
+
+////////===============================================================//////////////
+////////====================2 ORDER PLACEMENT CALL===================//////////////
+////////===============================================================//////////////
+
+app.post('/place-order', (req,res)=>{
+
+    //==1== razorpay order payment
+    //after confirmation of payment and got transaction id go for next step otherwise return error
+    //
+
+
+    //==2== push order details in admin order model 
+    const order = new Order({_id:req.body._id,date:date.now(),
+        order_ref_no:razorpay_order_ref_no,
+        product_Name:req.body.product_Name,
+        product_Qty:req.body.product_Qty,
+        grand_Total:razorpay.grand_Total,
+        payment_Status:razorpay_status});
+
+        order.save().then(()=>{
+            console.log('order is saved successfully')
+    
+            save_user_Order();
+        }).catch((e)=>{
+            // res.send(e);
+            console.log(e);
+        })
+    //==3== push order details in user order properties
+    const save_user_Order = ()=>{
+        
+
+            var newval = {$push: {date:date.now(),
+                order_ref_no:razorpay_order_ref_no,
+                product_Name:req.body.product_Name,
+                product_Qty:req.body.product_Qty,
+                grand_Total:razorpay.grand_Total,
+                payment_Status:razorpay_status}};//set the pushed array here
+        All_data.findByIdAndUpdate({_id:req.body._id},newval,{new:true,useFindAndModify: false}).then(()=>{
+            // res.send("sponser data has been updated")
+            update_sponser_order_data();
+        }).catch((e)=>{
+            res.send(e);
+        })
+
+    }
+//     //==4==update payouts including calculations for payout and reports in all uplevel sponser
+//    const update_sponser_order_data=()=>{
+//     var i = req.body.sponser_Username;
+//     //update the details of current sponser
+//     while(i!="null"){
+        
+//         // var newval = {$set: {Team.direct_Team:[]}};//set the pushed array here
+//         All_data.findByIdAndUpdate({_id:i},newval,{new:true,useFindAndModify: false}).then(()=>{
+//             // res.send("sponser data has been updated")
+//         }).catch((e)=>{
+//             res.send(e);
+//         })
+
+//         //find the uplevel sponser name until null
+//         All_data.findOne({_id:i},function(err, result){
+            
+//             if(result){
+//                 i = result;
+    
+//             }
+//             else{
+//                 res.send("sponser does not exits");
+//             }
+//         }).then(()=>{
+//             // res.send("value updated")
+//             // console.log("inside then")
+//         }).catch((e)=>{
+//             res.send(e);
+//         });
+
+//     }
+    
+//         //after exit the loop on null count
+//             res.send("sponser data has been updated")
+  
+
+//    }
+
+//==6== generate invoice download link with button to download
+//==7== after successful confirmation of everything send user invoice in email & send sms
+
+
+   
+});
+////////===============================================================//////////////
+////////====================/ ORDER PLACEMENT CALL===================//////////////
+////////===============================================================//////////////
 
 app.post('/get-order-data',function(req,res){
     Order.findOne({_id:req.body._id},function(err, result){

@@ -180,6 +180,26 @@ const All_dataSchema = new mongoose.Schema({
     right_Carry_Forward: {
       type: String
     },
+  },
+  order_Data: {
+    date: {
+      type: String,
+    },
+    order_ref_no: {
+      type: String,
+    },
+    product_Name:{
+      type: String
+    },
+    product_Qty: {
+      type: String,
+    },
+    grand_Total: {
+      type: String,
+    },
+    payment_Status: {
+      type: String,
+    }
   }
   // //8 wallet
   // wallet: {
