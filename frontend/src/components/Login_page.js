@@ -26,15 +26,16 @@ function Login_page(props) {
       password: "",
     },
     onSubmit: (values) => {
-      console.log(values.username,values.password);
-     //temporary login
-    //  if(values.username="admin101" && values.password=="hackadmin123"){
-    //   window.location.replace("/dashboard");
-    // }
-    // else{
-    //   toast.error("wrong credentials",{ autoClose: false,position: toast.POSITION.TOP_CENTER});
-    // }
-      send_to_backend(values);
+    //   console.log(values.username,values.password);
+    //  //temporary login
+    // //  if(values.username="admin101" && values.password=="hackadmin123"){
+    // //   window.location.replace("/dashboard");
+    // // }
+    // // else{
+    // //   toast.error("wrong credentials",{ autoClose: false,position: toast.POSITION.TOP_CENTER});
+    // // }
+    //   send_to_backend(values);
+    history.push("/dashboard")
     },
     //    validate
     validationSchema,

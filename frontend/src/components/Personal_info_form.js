@@ -8,6 +8,8 @@ import "../Styles/form.css";
 import { connect } from "react-redux";
 
 function Personal_info_form(props) {
+
+ 
   const validationSchema = Yup.object({
     // password: Yup.string().required('Required').email('invalid email format')
     sponser_Username: Yup.string().required("Required!"),
@@ -86,7 +88,7 @@ function Personal_info_form(props) {
       <form
         className="personal_info_form_container p-4 shadow-lg"
         action=""
-        onSubmit={formik.handleSubmit}
+        onSubmit={formik.handleSubmit} encType="multipart/form-data"
       >
         <div className="form_container_inner">
           <h3 className="pb-5">Personal Info</h3>
@@ -203,7 +205,7 @@ function Personal_info_form(props) {
                 <input
                   className=""
                   type="text"
-                  placeholder="Father_name_Husband_name"
+                  placeholder="Father name/Husband name"
                   id="Father_name_Husband_name"
                   name="Father_name_Husband_name"
                   {...formik.getFieldProps("Father_name_Husband_name")}
@@ -325,6 +327,7 @@ function Personal_info_form(props) {
                   </div>
                 ) : null}
               </div>
+              
             </div>
             {/* <div className="col-sm-4">
               {" "}

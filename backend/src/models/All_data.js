@@ -6,6 +6,14 @@ const All_dataSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  
+  email: {
+    type: String
+  },
+  
+  password: {
+    type: String
+  },
   status: {
     type: String
   },
@@ -22,9 +30,13 @@ const All_dataSchema = new mongoose.Schema({
   activation_Package: {
     type: String
   },
+  
   sponser_Side: {
       type: String
       
+    },
+    total_Income:{
+      type: String
     },
   // 1 personal info
   personal_info: {
@@ -40,12 +52,6 @@ const All_dataSchema = new mongoose.Schema({
     position: {
       type: String
     },
-    username: {
-      type: String
-    },
-    password: {
-      type: String
-    },
     First_name: {
       type: String
     },
@@ -59,9 +65,6 @@ const All_dataSchema = new mongoose.Schema({
       type: String
     },
     Phone: {
-      type: String
-    },
-    Email: {
       type: String
     },
     Date_of_birth: {
@@ -132,45 +135,49 @@ const All_dataSchema = new mongoose.Schema({
     },
     direct_Team: {
       type: Array
+    },
+    tree_View:{
+      name: { type: String},
+      children: { type: Array}
     }
   },
   //6 payouts
   payouts: {
     direct_Income: {
-      type: String
+      type: Array
     },
     repurchase_Income: {
-      type: String
+      type: Array
     },
     matching_Income: {
-      type: String
+      type: Array
     },
     matching_Bonus: {
-      type: String
+      type: Array
     },
     leadership_Reward: {
-      type: String
+      type: Array
     },
     leadership_Income: {
-      type: String
+      type: Array
     },
     car_Fund: {
-      type: String
+      type: Array
     },
     house_Fund: {
-      type: String
+      type: Array
     },
     anual_Bonus: {
-      type: String
+      type: Array
     }
   },
   //7 reports
   reports: {
     admin_Charge: {
-      type: String
+      type: Array
     },
     tds_Charge: {
-      type: String
+      type: Array
     },
   },//7 reports
   carry_Forward: {

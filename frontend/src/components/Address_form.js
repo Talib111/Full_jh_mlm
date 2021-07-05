@@ -60,8 +60,7 @@ function Address_form(props) {
       return (
        
         <React.Fragment>
-          <h3>Redux value: {props.numofCakes}</h3>
-      <h1 onClick={props.buyCake} style={{"cursor": 'pointer'}}>Testing redux</h1>
+         
           <form
             className="container personal_info_form_container p-4 shadow-lg"
             action=""
